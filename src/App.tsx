@@ -43,10 +43,41 @@ function App() {
             <Contact />
           </main>
           <footer className={`${isDark ? 'bg-gray-800' : 'bg-gray-900'} text-white py-8`}>
-            <div className="container mx-auto px-4 text-center">
-              <p>© 2025 AK Group of Companies. All rights reserved.</p>
-            </div>
-          </footer>
+  <div className="container mx-auto px-4 text-center space-y-4">
+    <p>© 2025 AK Group of Companies. All rights reserved.</p>
+    <div className="flex justify-center space-x-6">
+      <a 
+        href="https://wa.me/8341553216" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-green-500 hover:text-green-400"
+        aria-label="WhatsApp"
+      >
+        <i className="pi pi-whatsapp text-2xl"></i>
+      </a>
+      <a 
+        href="https://instagram.com/adi019471" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-pink-500 hover:text-pink-400"
+        aria-label="Instagram"
+      >
+        <i className="pi pi-instagram text-2xl"></i>
+      </a>
+      <a 
+        href="https://linkedin.com/in/Adi@s019471" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-blue-500 hover:text-blue-400"
+        aria-label="LinkedIn"
+      >
+        <i className="pi pi-linkedin text-2xl"></i>
+      </a>
+    </div>
+    <p className="text-sm">Contact us: <a href="tel:+918341553216" className="underline">+91 8341553216</a></p>
+  </div>
+</footer>
+
         </div>
       </ThemeContext.Provider>
     </PrimeReactProvider>
